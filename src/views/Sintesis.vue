@@ -2,13 +2,13 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
+    p La caracterización de la precipitación histórica y futura requiere integrar información confiable sobre las fuentes de datos, los periodos de referencia, la organización y validación de las series históricas, así como las proyecciones asociadas con escenarios de cambio climático y sus horizontes temporales. A partir de estos elementos, es posible reconocer variaciones en el comportamiento de la precipitación, comparar condiciones históricas y futuras e interpretar los resultados considerando las unidades, la calidad de los datos, la procedencia de la información y las condiciones de incertidumbre. La herramienta de cálculo complementa este proceso al permitir registrar el área de estudio y sus fuentes, organizar datos históricos y proyectados, aplicar controles básicos, generar resúmenes y calcular cambios absolutos y porcentuales. Su uso adecuado contribuye a mantener la trazabilidad de la información y a sustentar interpretaciones técnicas sobre la disponibilidad de agua lluvia, favoreciendo decisiones informadas relacionadas con el análisis del recurso hídrico y la adaptación frente a posibles cambios climáticos.
     
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/sintesis.svg", alt="Mapa conceptual de la precipitación histórica y futura: datos históricos, escenarios de cambio climático y herramienta de cálculo.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono
