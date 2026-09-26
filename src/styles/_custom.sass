@@ -56,7 +56,7 @@ figcaption
     background-image: url(../assets/curso/portada/fondo-banner-temas.png) !important
 
 .cajon.color-acento-contenido
-    background-color: #E6EDE5
+    background-color: #ACB8C6
 .cajon.color-acento-botones
     background-color: #E7F2FB
 
@@ -71,6 +71,25 @@ figcaption
   padding-right: 16px
   padding-left: 60px
   min-height: 48px
+
+  &-2
+    background-color: $color-acento-contenido
+    border-radius: 0 30px 0 0
+    width: fit-content
+    max-width: 100%
+    position: relative
+    display: inline-flex
+    align-items: center
+    padding-right: 16px
+    padding-left: 40px
+    min-height: 48px
+    
+    @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
+    border-radius: 10px
+
+
+
  
   @media screen and (max-width: $bp-min-md)
     padding-left: 0px
@@ -78,9 +97,9 @@ figcaption
 
 
 
-  &__icon
+  &__icon, &-2__icon
     position: absolute
-    left: -10px
+    left: -16px
     top: 50%
     transform: translateY(-50%)
     width: 70px
@@ -90,11 +109,20 @@ figcaption
     @media screen and (max-width: $bp-min-md)
       display: none
 
-  &__text
+  &-2__icon
+    width: 50px
+
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text, &-2__text
     margin: 0
     margin: 0 15px 0 10px
     white-space: normal
     word-break: break-word
+  &-2__text
+    color: $white
 
 .pasos-b__header__item--before .pasos-b__header__item__dot,
 .pasos-b__header__item--before .pasos-b__header__item__line-container:before, .pasos-b__header__item--before .pasos-b__header__item__line-container:after,
@@ -109,11 +137,33 @@ figcaption
 //TABLA-A
 .tabla-a.t-cus table td
     line-height: 2 !important
+.tabla-a.t-cus-2 table td
+    line-height: 1.6 !important
 .tabla-a.color-secundario thead tr
     background-color: #6350C7 !important
 .tabla-a.color-secundario thead tr th
     text-align: center !important
     color: $white
+
+.tarjeta-audio.color-acento-botones .tarjeta-audio__texto 
+      color: $color-sistema-texto !important
+      font-style: normal !important
+
+.acordion__accion__btn--b
+    background-color: $color-acento-botones !important;
+    border: 0
+.tarjeta.bg-card
+  background-color: #AFD4F1
+.tarjeta.bg-card.acordion__activo
+  background-color: #BBB0F6
+.tarjeta.bg-card.acordion__activo .acordion__titulo h3
+  color: $color-sistema-texto !important
+.acordion__accion__btn--a
+    background-color: $color-acento-botones
+.acordion__accion__btn--a i
+    color: white;
+.linea-tiempo-e:before, .linea-tiempo-e:after
+    background: $color-acento-botones
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
@@ -139,6 +189,8 @@ figcaption
     background-color: #B6D7E2
   &-4
     background-color: #ACB8C6
+  &-5
+    background-color: #6350C7
 
 .bg
   &-white
