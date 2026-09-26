@@ -44,7 +44,8 @@ const router = createRouter({
           name: 'tema3',
           component: () =>
             import(/* webpackChunkName: "tema3" */ '../views/Tema3.vue'),
-        },],
+        },
+      ],
     },
     {
       path: '/actividad',
@@ -90,7 +91,7 @@ const router = createRouter({
           let targetEl = null
           try {
             targetEl = document.querySelector(to.hash)
-          } catch (_) {
+          } catch {
             targetEl = document.getElementById(to.hash.replace('#', ''))
           }
 

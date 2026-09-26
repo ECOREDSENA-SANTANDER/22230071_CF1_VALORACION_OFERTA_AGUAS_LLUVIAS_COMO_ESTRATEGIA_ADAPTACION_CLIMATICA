@@ -60,6 +60,60 @@ figcaption
 .cajon.color-acento-botones
     background-color: #E7F2FB
 
+.titulo-tercer-nivel
+  width: fit-content
+  max-width: 100%
+  position: relative
+  display: inline-flex
+  align-items: center
+  background-color: $color-primario
+  border-radius: 30px
+  padding-right: 16px
+  padding-left: 60px
+  min-height: 48px
+ 
+  @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
+    border-radius: 10px
+
+
+
+  &__icon
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 70px
+    max-width: 85px
+    height: auto
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text
+    margin: 0
+    margin: 0 15px 0 10px
+    white-space: normal
+    word-break: break-word
+
+.pasos-b__header__item--before .pasos-b__header__item__dot,
+.pasos-b__header__item--before .pasos-b__header__item__line-container:before, .pasos-b__header__item--before .pasos-b__header__item__line-container:after,
+.pasos-b__header__item--active .pasos-b__header__item__line-container:before
+    background-color: #18485C
+    border: 0px
+.linea-tiempo-c__header__btn, .pasos-b__header__btn--left, .pasos-b__header__btn--right, .linea-tiempo-c__header__btn--left, .linea-tiempo-c__header__btn--right
+  background-color: $color-acento-botones;
+.linea-tiempo-c__header__btn i, .pasos-b__header__btn--left i, .pasos-b__header__btn--right i, .linea-tiempo-c__header__btn--left i, .linea-tiempo-c__header__btn--right i
+  color: $white
+
+//TABLA-A
+.tabla-a.t-cus table td
+    line-height: 2 !important
+.tabla-a.color-secundario thead tr
+    background-color: #6350C7 !important
+.tabla-a.color-secundario thead tr th
+    text-align: center !important
+    color: $white
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
@@ -72,12 +126,23 @@ figcaption
   margin-inline: -3.3rem
 .bg-fondo
   &-1
-    //background-image: url(../assets/curso/bg/3.svg)
+    background-image: url(../assets/curso/temas/bg/2.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
 .bg-color
   &-1
-    background-color: $color-primario
+    background-color: #E7F2FB
+  &-2
+    background-color: #18485C
+  &-3
+    background-color: #B6D7E2
+  &-4
+    background-color: #ACB8C6
 
 .bg
+  &-white
+    background-color: #fff
   &-primario
     background-color: $color-primario
   &-secundario
@@ -87,9 +152,22 @@ figcaption
   &-acento-botones
     background-color: $color-acento-botones
     
+.pcus
+  &-3
+    padding-top: 3rem !important;
+  &-4
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
 
+.br
+  &-1
+    border-radius: 20px
+  &-2
+    border-radius: 10px
 
-
+.wcus
+  &-1
+    width: 70%
 
 /**************************************************************/
 /*Media Queries*/  
